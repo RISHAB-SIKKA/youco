@@ -1,0 +1,90 @@
+/* ---------------------------- NAV BAR --------------------------------------------- */
+.gs-nav-cicrle{
+    width: 40px;
+    height: 40px;
+    background-color: black;    
+    border-radius:40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    z-index: 3;
+}
+.gs-nav-cicrle:hover{
+    background: #1ba94c;
+    cursor: pointer;
+}
+.gs-menu-slider{
+    height: 100vh;
+    width: 0vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1200;
+    color: black;
+    background-color: black;
+    transition: .3s ease-out;
+    text-align: left;
+    letter-spacing: 1px;
+}
+.gs-hamburger-icon{
+    position: relative;
+    top: 10px;
+    color: #eee;
+    font-size: 20px;
+    z-index: 2;
+}
+.gs-text-cont{
+    position: relative;
+    top: 20%;
+    left: 30px;
+}
+.gs-text-cont h1{
+    color: #eee;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.gs-text-cont h1 a:hover{
+    color: #1ba94c;
+    cursor: pointer;
+    transition: .2s;
+}
+.gs-menu-close{
+    color: #eee;
+    font-size: 22px;
+    margin-top: 20px;
+}
+.gs-menu-close:hover{
+    color: #1ba94c;
+    cursor: pointer;
+    transition: .2s;
+}
+.gs-fadde{
+    display: none;
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color:black;
+    opacity: 0.5;
+}
+@media (max-width:550px) {
+    .gs-nav-cicrle{
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    }
+    .gs-hamburger-icon{
+    top: 2px;
+    left: 8px;
+    font-size: 15px;
+    }
+}
+/* --------------------End OF nav Bar--------------- */
