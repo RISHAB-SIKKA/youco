@@ -107,17 +107,17 @@
 .semester{
     margin-top:40px ;
     margin-bottom: 60px;
-    /* border: 2px solid red; */
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 .semester-container{
-    width: 80vw;
+    width: 60vw;
     margin: 50px 10vw;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: space-evenly;
-    /* border: 2px solid red; */
+    justify-content: space-around;
+    border: 2px solid red;
 }
 .semester-container a{
     color: none;
