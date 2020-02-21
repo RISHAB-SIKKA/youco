@@ -5,10 +5,9 @@
 body{
     display: inline;
     font-family: 'Poppins', sans-serif;
-    background-color:#eee;      
-    /* background-color: black; */
-    /* overflow-x: hidden; */
- }/*
+    background-color:linear-gradient(to bottom, #fff 0%, #f3f7f7 100%);;      
+    
+ }
 a{
     color: #ffffff;
 }
@@ -30,7 +29,7 @@ a:hover {
 a:active {
     text-decoration: underline;
     text-decoration: none;
-} */
+} 
 .gs-hr{
     position: relative;
     top: 0;

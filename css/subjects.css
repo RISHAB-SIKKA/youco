@@ -9,6 +9,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 64px;
     font-weight: 900;
+    background-color: transparent;
 }
 .as-card-container{
     margin-top: 25px;
@@ -24,7 +25,7 @@
     height: 240px;
     background-color: #f5f7fb;
     border-radius: 6px;
-    box-shadow: 2px 2px 6px 2px #ccc;
+    box-shadow: 0px 0px 12px 1px #ccc;
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -61,7 +62,7 @@
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: black;
+    color: #0e141e;
 }
 .content{
     position: relative;
@@ -122,7 +123,7 @@
     position: relative;
     top: 25%;
     font-size: 20px;
-    color: black;
+    color: #0e141e;
 }
 .gs-subject-details-button span{
     margin-top: 5px;
@@ -130,13 +131,13 @@
     font-size: 16px;
     font-weight: 600;
     letter-spacing: .4px;
-    color: black;
+    color: #0e141e;
 }
 .inner-box{
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color:#1ba94c;
+    background: linear-gradient(0deg, #9ebd13 0%,#1ba94c 50%, #1ba94c 100%);
     width: 100%;
     height: 0;
     transition: .5s ease;

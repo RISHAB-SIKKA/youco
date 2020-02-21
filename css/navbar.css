@@ -2,7 +2,7 @@
 .gs-nav-cicrle{
     width: 40px;
     height: 40px;
-    background-color: black;    
+    background-color: #1ba94c;    
     border-radius:40px;
     display: flex;
     flex-wrap: wrap;
@@ -13,7 +13,8 @@
     z-index: 3;
 }
 .gs-nav-cicrle:hover{
-    background: #1ba94c;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px 2px #cccccc;
     cursor: pointer;
 }
 .gs-menu-slider{
@@ -23,11 +24,12 @@
     top: 0;
     right: 0;
     z-index: 1200;
-    color: black;
-    background-color: black;
+    background-image:linear-gradient(90deg, #39424e 0% , #0f191d 50%, #0f191d 100%);
     transition: .3s ease-out;
     text-align: left;
     letter-spacing: 1px;
+    border-radius: 4px 0 0 4px;
+    /* border: 2px solid red; */
 }
 .gs-hamburger-icon{
     position: relative;
@@ -42,11 +44,17 @@
     left: 30px;
 }
 .gs-text-cont h1{
-    color: #eee;
+    color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
+    font-weight: 400;
+    margin: 8px 0px;
+}
+.gs-line{
+    border: 0;
+    height: 2px;
+    width: 16rem;
+    background: rgb(100, 100, 100);
 }
 .gs-text-cont h1 a:hover{
     color: #1ba94c;
@@ -71,7 +79,7 @@
     right: 0;
     height: 100vh;
     width: 100vw;
-    background-color:black;
+    background-color:#0e141e;
     opacity: 0.5;
 }
 @media (max-width:550px) {

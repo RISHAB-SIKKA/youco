@@ -62,18 +62,18 @@
     background-color: #eee;
 }
 .gs-button-container a{
-    color: black;
+    color: #0e141e;
 }
 .gs-button-container a:link {
-    color: black;
+    color: #0e141e;
     text-decoration: none;
 }
 .gs-button-container a:visited {
-    color: black;
+    color: #0e141e;
     text-decoration: none;
 }
 .gs-button-container a:hover {
-    color: black;
+    color: #0e141e;
     text-decoration: none;
     
 }
@@ -87,28 +87,15 @@
     height: 550px;
     width: 100%;
     position: absolute;
-    top:0;
-    background-color:#ffffff;
+    background-image:linear-gradient(to bottom, #fff 0%, #f3f7f7 100%);
+    top:0;  
     z-index: 0;  
     transition: opacity 400ms ease-in-out; 
 }
 
 #gs-btn-0{
-    background-color:#ffffff;
     opacity: 1;
     z-index: 1;
-}
-#gs-btn-2{
-    background-color:#ffffff;
-}
-#gs-btn-3{
-    background-color:#ffffff;
-}
-#gs-btn-4{
-    background-color:#ffffff;
-}
-#gs-btn-5{
-    background-color:#ffffff;
 }
 .sems-content{
     position: relative;
@@ -136,19 +123,19 @@
     color: none;
 }
 .semester-container a:link{
-    color: black;
+    color: #0e141e;
     text-decoration: none;
 }
 .semester-container a:visited{
-    color: black;
+    color: #0e141e;
     text-decoration: none;
 }
 .semester-container a:hover{
-    color: black;
+    color: #0e141e;
     text-decoration: none;
 }
 .semester-container a:active {
-    color: black;
+    color: #0e141e;
     text-decoration: none;
 } 
 .semester-box{
