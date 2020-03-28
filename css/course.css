@@ -3,7 +3,7 @@
     top: 0;
     width: 100vw;
     max-width: 100%;
-    height: 100px;
+    height: 12vh;
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: space-around;
@@ -17,7 +17,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* border: 2px solid red; */
 }
 .gs-button{
     box-sizing: border-box;
@@ -25,12 +24,12 @@
     height: 40px;
     text-align: center;
     border-radius: 35px;
-    border: 1.2px solid #1ba94c;
+    border: 1.5px solid #1ba94c;
     background: none;
     align-content: center;
     overflow: hidden;
 }
-.gs-button span{
+.gs-button h4{
     position: relative;
     top: 6px;
     font-size: 16px;
@@ -50,30 +49,31 @@
 }
 .gs-button:hover::before{
     height: 180%;
-    transition: 0.8s;
+    transition: 1400ms;
 }
 .gs-button:hover{
     transition: .8s;
     cursor: pointer;
     transform: translateY(-2px);
-    box-shadow: 2px 2px 3px 1px #cccccc ;
+    box-shadow: 0px 3px 6px -2px  #1ba94c ;
 }
-.gs-button:active{
-    background-color: #eee;
-}
+.gs-button:hover h4{
+    color: #eee;
+    transition: .5s;
+} 
 .gs-button-container a{
-    color: #0e141e;
+    color: #39424e;
 }
 .gs-button-container a:link {
-    color: #0e141e;
+    color: #39424e;
     text-decoration: none;
 }
 .gs-button-container a:visited {
-    color: #0e141e;
+    color: #39424e;
     text-decoration: none;
 }
 .gs-button-container a:hover {
-    color: #0e141e;
+    color: #39424e;
     text-decoration: none;
     
 }
@@ -82,104 +82,126 @@
     text-decoration: underline;
     text-decoration: none;
 }
-#gs-btn-1,#gs-btn-2,#gs-btn-3,#gs-btn-4,#gs-btn-5,#gs-btn-0{
+.sems-content{
+    height: 88vh;
+    position: relative;
+    top: 0;
+    box-sizing: border-box;
+    text-align: center;
+    /* border: 2px red solid; */
+}
+#gs-btn-1,#gs-btn-2,#gs-btn-3,#gs-btn-4,#gs-btn-5{
     opacity: 0;
-    height: 550px;
     width: 100%;
     position: absolute;
     background-image:linear-gradient(to bottom, #fff 0%, #f3f7f7 100%);
     top:0;  
     z-index: 0;  
-    transition: opacity 400ms ease-in-out; 
+    transition: opacity 400ms ease-in-out;
+    /* border:1px red solid; */
 }
 
 #gs-btn-0{
+    width: 100%;
+    position: absolute;
+    top:0;  
+    transition: opacity 400ms ease-in-out;
+    color: #eee;
     opacity: 1;
     z-index: 1;
 }
-.sems-content{
-    position: relative;
-    top: 0;
-    box-sizing: border-box;
-    height: 1000px;
-    text-align: center;
-}
+
 .semester{
-    margin-top:40px ;
-    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.semester h1{
+    width: 60vw;
+    color: #39424e ;
+    font-size: 48px;
+    margin: 60px 0px 30px 0;
+    /* border: 2px red solid; */
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .semester-container{
-    width: 60vw;
-    margin: 50px 10vw;
+    width: 70vw;
+    /* margin: 50px 15vw; */
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
-.semester-container a{
-    color: none;
-}
-.semester-container a:link{
-    color: #0e141e;
-    text-decoration: none;
-}
-.semester-container a:visited{
-    color: #0e141e;
-    text-decoration: none;
-}
-.semester-container a:hover{
-    color: #0e141e;
-    text-decoration: none;
-}
-.semester-container a:active {
-    color: #0e141e;
-    text-decoration: none;
-} 
 .semester-box{
-    display: inline-flex;
+    display: flex;
+    justify-content: flex-start;
     text-align: center;
     width: 250px;
-    height: 45px;
+    height: 55px;
     margin: 25px 50px;
     background-color: #eee;
     border: 2px solid #ffffff;
     border-radius: 6px;
     box-shadow: 2px 2px 8px 0px #ccc;
-}
-.semester-box:hover{
-    transition: 200ms;
-    transform: translateY(-3px);
-    box-shadow: 2px 6px 8px 0px #ccc;
-    cursor: pointer;
-}
+    /* border: 2px solid red; */
 
+}
 .gs-sem-icon{
-    height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
     width: 55px;
     background-color: #ffffff;
     border-radius: 6px 0 0 6px ;
-}
-.semester-box:hover .gs-sem-icon{
-    background-color: #1ba94c;
-}
 
-
-.semester-box i{
+}
+.gs-sem-icon::before{
+    content:"";
+    position: absolute;
+    width: 0%;
+    height:100%;
+    left: 0;
+    bottom: 0;
+    background: #1ba94c;
+    border-radius:0% 50% 50% 0%;
+    z-index: 0;
+}
+.semester-box:hover{
+    transition: 600ms;
+    transform: translateY(-4px);
+    box-shadow: 2px 6px 8px -2px #ccc;
+    cursor: pointer;
+}
+.semester-box:hover .gs-sem-icon::before{
+    width: 180%;
+    transition: 1400ms;
+}
+.semester img{
+    width: 40vw;
+}
+.gs-sem-icon i{
     position: relative;
-    top: 10px;
     font-size: 20px;
+    color: #39424e;
 }
 .semester-box p{
-    position: relative; 
-    top: 8px;
-    left: 10px;
-    text-align: left;
+    position: relative;
+    margin: 15px 15px;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    letter-spacing: .2px;
+    letter-spacing: .8px;
+    color: #39424e;
 }
 @media (max-width:900px) {
     .gs-nav-bar{

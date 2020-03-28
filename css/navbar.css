@@ -1,20 +1,50 @@
 /* ---------------------------- NAV BAR --------------------------------------------- */
+.layer{
+    position: absolute;
+    top: 35px;
+    right: 5vw;
+    display: flex;
+    /* width: 50px; */
+    /* border: 1px red solid; */
+}
+.icon1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 30px;
+}
+.icon1 .what{
+    margin: 0 0 ;
+    font-size: 24px;
+    color: #1ba94c;
+}
+.icon1 h4{
+    margin-left: 10px;
+    color: #39424e;
+}
+
 .gs-nav-cicrle{
-    width: 40px;
-    height: 40px;
-    background-color: #1ba94c;    
+    width: 38px;
+    height: 38px;
+    background-color: #1ba94c;   
     border-radius:40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     position: fixed;
-    top: 20px;
-    right: 30px;
+    top: 25px;
+    left: 35px;
     z-index: 3;
+    border: 1.1px #1ba94c solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .gs-nav-cicrle:hover{
-    transform: translateY(-2px);
-    box-shadow: 0 2px 5px 2px #cccccc;
+    transition:all .8s;   
+    transform: translateY(-2px); 
+    box-shadow: 1px 6px 10px -5px #1ba94c;
     cursor: pointer;
 }
 .gs-menu-slider{
@@ -22,45 +52,57 @@
     width: 0vw;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 1200;
-    background-image:linear-gradient(90deg, #39424e 0% , #0f191d 50%, #0f191d 100%);
+    background:#1f3d37;
     transition: .3s ease-out;
     text-align: left;
     letter-spacing: 1px;
-    border-radius: 4px 0 0 4px;
-    /* border: 2px solid red; */
+    display: block;
+    overflow: hidden;
+    border-radius: 0 50% 50% 0 ;
 }
 .gs-hamburger-icon{
-    position: relative;
-    top: 10px;
     color: #eee;
     font-size: 20px;
     z-index: 2;
 }
 .gs-text-cont{
-    position: relative;
+    position: absolute;
     top: 20%;
-    left: 30px;
+    left: 20px;
 }
+.gs-menu-options{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+}
+.fa-home , .fa-users{
+    margin: 16px 7px 0 7px;
+    font-size: 20px;
+    color: #1ba94c;
+}
+.fa-whatsapp{
+    margin: 16px 8px 0px 10px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #1ba94c; 
+}
+
 .gs-text-cont h1{
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    margin: 8px 0px;
+    margin: 15px 0px 7px 0;
 }
 .gs-line{
-    border: 0;
-    height: 2px;
+    border-radius: 1px 1px 1px 1px;
+    height: 1px;
     width: 16rem;
     background: rgb(100, 100, 100);
 }
-.gs-text-cont h1 a:hover{
-    color: #1ba94c;
-    cursor: pointer;
-    transition: .2s;
-}
+
 .gs-menu-close{
     color: #eee;
     font-size: 22px;
@@ -95,4 +137,5 @@
     font-size: 15px;
     }
 }
+
 /* --------------------End OF nav Bar--------------- */
