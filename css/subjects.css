@@ -1,20 +1,26 @@
+.bg{
+    background-color: #f5f7fb;
+}
 .as-xyz{
-    margin-top: 20px;
+    margin-top: 30px;
     width: 100vw;
     max-width: 100%;
     height: 100px;
     text-align: center;
 }
 .as-xyz h1{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 64px;
-    font-weight: 900;
+    font-weight: 600;
     background-color: transparent;
     color: #39424e;
 }
 .as-xyz p{
-    font-size: 40px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 35px;
     color: #738fa4;
+    margin-bottom: 20px;
 }
 .as-card-container{
     margin-top: 55px;
@@ -42,8 +48,9 @@
 }
 
 .as-card-pic{
-    width: 320px;
-    height: 220px;
+    background-color: #ffffff;
+    /* border: 2px solid red; */
+    width: 350px;
     position: absolute;
     top: 0;
     left: 0;
@@ -142,7 +149,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background: linear-gradient(0deg, #9ebd13 0%,#1ba94c 50%, #1ba94c 100%);
+    background: linear-gradient(0deg, #9ebd13 0%,#1ba94c 25%, #1ba94c 100%);
     width: 100%;
     height: 0;
     transition: .5s ease;
@@ -155,4 +162,57 @@
 }
 .as-card:hover .as-subject-name{
     opacity: 0;
+}
+@media (max-width:550px){
+    .as-xyz{
+        margin-top: 3em;
+    }
+    .as-xyz h1{
+        margin-top: .75em;
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .as-xyz p{
+        margin-top: 0px;
+        font-size: 18px;
+    }
+    .as-card-container{
+        margin-top: 0px;
+    }
+    .as-card{
+        width: 240px;
+        height: 165px;
+        margin: 20px 0;
+    }
+    .as-card-pic{
+        width: 240px;
+    }
+    .as-subject-name{
+        height: 1.6em;
+    }
+    .as-subject-name h1{
+        top: 0;
+        margin: .3em 1em;
+        font-size: 12px;
+    }
+    .content h1{
+        font-size: 12px;
+    }
+    .gs-subject-details-button{
+        margin-left: 20%;
+        width: 60%;
+        height: 1.2em;
+        border: 1px solid #ffffff;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .gs-subject-details-icon{
+        display: none;
+    }
+    .gs-subject-details-button span{
+        margin: 0 0;
+        font-size: 12px;
+    }
 }

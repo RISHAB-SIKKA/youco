@@ -4,8 +4,6 @@
     top: 35px;
     right: 5vw;
     display: flex;
-    /* width: 50px; */
-    /* border: 1px red solid; */
 }
 .icon1{
     display: flex;
@@ -42,7 +40,7 @@
     align-items: center;
 }
 .gs-nav-cicrle:hover{
-    transition:all .8s;   
+    transition:all .3s;   
     transform: translateY(-2px); 
     box-shadow: 1px 6px 10px -5px #1ba94c;
     cursor: pointer;
@@ -60,7 +58,6 @@
     letter-spacing: 1px;
     display: block;
     overflow: hidden;
-    border-radius: 0 50% 50% 0 ;
 }
 .gs-hamburger-icon{
     color: #eee;
@@ -75,15 +72,15 @@
 .gs-menu-options{
     display: flex;
     flex-direction: row;
-    /* border: 2px solid red; */
+    align-items: center;
+    text-align: center;
+    height: 4vh;
 }
 .fa-home , .fa-users{
-    margin: 16px 7px 0 7px;
     font-size: 20px;
     color: #1ba94c;
 }
 .fa-whatsapp{
-    margin: 16px 8px 0px 10px;
     font-size: 22px;
     font-weight: 400;
     color: #1ba94c; 
@@ -94,7 +91,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    margin: 15px 0px 7px 0;
+    margin-left: 6px;
 }
 .gs-line{
     border-radius: 1px 1px 1px 1px;
@@ -125,16 +122,37 @@
     opacity: 0.5;
 }
 @media (max-width:550px) {
+    .layer{
+        top: 1.2em;
+    }
     .gs-nav-cicrle{
-    top: 10px;
-    right: 10px;
-    width: 30px;
-    height: 30px;
+    top: 1em;
+    left: .6em;
+    width: 24px;
+    height: 24px;
     }
     .gs-hamburger-icon{
-    top: 2px;
-    left: 8px;
-    font-size: 15px;
+    font-size: 12px;
+    }
+    .gs-text-cont{
+        top: 8%;
+        left: 13%;
+    }
+    .gs-menu-options{
+        /* border: 2px red solid; */
+    }
+    .gs-text-cont h1{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .fa-home , .fa-users{
+        font-size: 16px;
+    }
+    .fa-whatsapp{
+        font-size: 16px;
+    }
+    .gs-line{
+        width: 100%;
     }
 }
 
