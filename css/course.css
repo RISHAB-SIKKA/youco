@@ -1,30 +1,36 @@
-.gs-nav-bar{
+.gs-nav-bar,.gs-button-container,.gs-button h4,.sems-content,.gs-sem-icon,.gs-sem-icon img,.semester-box p{
     position: relative;
+}
+.gs-nav-bar,.gs-button-container,.gs-button,.semester,.semester h1,.semester-container,.semester-box,.gs-sem-icon{
+    display: flex;
+}
+.gs-nav-bar{
     top: 0;
     width: 100vw;
     max-width: 100%;
     height: 15vh;
     font-family: 'Poppins', sans-serif;
-    display: flex;
+    align-items: center;
     justify-content: space-around;
     z-index: 1;
-    background-color: #ffffff;
+    background: var(--background);   /*changed*/
+    ;
 }
+
 .gs-button-container{
     width:90vw;
-    position: relative;
-    top: 25px;
-    display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
 }
+
 .gs-button{
-    display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    width: 150px;
-    height: 40px;
+    width: 160px;
+    height: 45px;
     text-align: center;
     border-radius: 35px;
     border: 1.5px solid #1ba94c;
@@ -33,10 +39,9 @@
     overflow: hidden;
 }
 .gs-button h4{
-    position: relative;
     font-size: 16px;
-    font-weight: bolder;
-    letter-spacing: 1.4px;
+    font-weight: 600;
+    letter-spacing: .1em;
 }
 .gs-button::before{
     content:"";
@@ -48,114 +53,96 @@
     background: #1ba94c;
     border-radius:50% 50% 0 0;
     z-index: -1;
+    
 }
 .gs-button:hover::before{
     height: 180%;
-    transition: 1400ms;
+    transition: 800ms;
+    
 }
 .gs-button:hover{
     transition: .8s;
     cursor: pointer;
-    transform: translateY(-2px);
+    transform: translateY(-1px);
     box-shadow: 0px 3px 6px -2px  #1ba94c ;
 }
 .gs-button:hover h4{
     color: #eee;
     transition: .5s;
 } 
-.gs-button-container a{
-    color: #39424e;
-}
-.gs-button-container a:link {
-    color: #39424e;
+.gs-button-container a,a:link,a:visited,a:hover,a:active{
+    color: var(--clr-gs-button-container);                         /*changed*/
     text-decoration: none;
 }
-.gs-button-container a:visited {
-    color: #39424e;
-    text-decoration: none;
-}
-.gs-button-container a:hover {
-    color: #39424e;
-    text-decoration: none;
-    
-}
-.gs-button-container a:active {
-    color: transparent;
-    text-decoration: underline;
-    text-decoration: none;
-}
+
 .sems-content{
     height: 80vh;
-    position: relative;
     top: 0;
     box-sizing: border-box;
     text-align: center;
+    /* border: 1px solid red; */
 }
-#gs-btn-1,#gs-btn-2,#gs-btn-3,#gs-btn-4,#gs-btn-5{
+.sem-areas{
+    display: block;
     opacity: 0;
     width: 100vw;
     max-width: 100%;
     height: 80vh;
     max-height: 100%;
     position: absolute;
-    background-image:linear-gradient(to bottom, #fff 0%, #f3f7f7 100%);
+    background-image:linear-gradient(to bottom, #fff 0%, #f8f9fa 100%);
     top:0;  
     z-index: 0;  
     transition: opacity 400ms ease-in-out;
+    background:var(--background);                                     /*changed*/
+    /* border: 1px solid red; */
 }
 
-#gs-btn-0{
+.sem-first-area{
     width: 100%;
+    height: 80vh;
+    max-height: 100%;
     position: absolute;
     top:0;  
     transition: opacity 400ms ease-in-out;
-    color: #eee;
+    background: var(--background);                                     /*changed*/
     opacity: 1;
-    z-index: 1;
+    z-index: 3;
 }
 
 .semester{
-    /* border:2px red solid; */
-    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    height: 80vh;
 }
 .semester h1{
     width: 60vw;
-    color: #39424e ;
-    font-size: 48px;
-    margin: 60px 0px 30px 0;
-    height: 120px;
-    display: flex;
+    color: var(--clr-semester-h1);                                          /*changed*/
+    font-size: 40px;
+    height: 3.5em;
+    margin: 50px 0 15px ;
     justify-content: center;
-    align-items: center;
-
 }
 .semester-container{
     width: 70vw;
     margin-top: 30px;
-    display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
 }
 .semester-box{
-    display: flex;
     justify-content: flex-start;
     text-align: center;
     width: 250px;
     height: 55px;
     margin: 25px 50px;
-    background-color: #eee;
-    border: 2px solid #ffffff;
+    background: var(--clr-background);
+    border: 2px solid #476d7c;                                          /*changed*/
     border-radius: 6px;
-    box-shadow: 2px 2px 8px 0px #ccc;
+    box-shadow: 2px 2px 8px 0px #476d7c;                                /*changed*/
 }
 .gs-sem-icon{
     overflow: hidden;
-    position: relative;
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
@@ -182,78 +169,114 @@
 }
 .semester-box:hover .gs-sem-icon::before{
     width: 180%;
-    transition: 1400ms;
+    transition: 500ms;
 }
-.semester img{
-    width: 40vw;
+.sem-img{
+    width: 40%;
 }
-.gs-sem-icon i{
-    position: relative;
-    font-size: 20px;
-    color: #39424e;
+.gs-sem-icon img{
+    z-index: 2;
+    width: 30px;
 }
 .semester-box p{
-    position: relative;
     margin: 15px 15px;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: .8px;
-    color: #39424e;
+    color: var(--clr-semester-boxp) ;                                          /*changed*/
 }
-@media (max-width:900px) {
-    .gs-nav-bar{
-        height: 80px;
+@media (max-width:1200px){
+    .gs-button{
+        height: 40px;
     }
+}
+@media (max-width:1000px){
+    .gs-button{
+        margin-top: 10px;
+        width: 120px;
+        height: 38px;
+    }
+    .semester h1{
+        width: 80vw;
+        font-size: 34px;
+    }
+    .semester-container{
+        width: 80vw;
+    }
+    .semester-box{
+        width: 180px;
+        height: 45px;
+        margin: 15px 25px;
+    }
+    .gs-sem-icon{
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        height: 42px;
+        width: 50px;
+        background-color: #ffffff;
+        border-radius: 6px 0 0 6px;
+    }
+    .gs-sem-icon img{
+        width: 25px;
+    }
+    .semester-box p{
+        margin: 13px 10px;
+
+    }
+}
+@media (max-width:800px){
     .gs-button{
         width: 100px;
         height: 35px;
     }
-    .gs-button span{
-        top:4px;
-        font-size: 14px;
-    }
 }
-@media (max-width:768px) {
-    .gs-nav-bar{
-        height: 80px;
-    }
+@media (max-width:600px){
     .gs-button{
         width: 80px;
         height: 30px;
     }
-    .gs-button span{
-        top:1px;
-        font-size: 12px;
-    }
 }
-@media (max-width:550px) {
+@media (max-width:600px) {
+    .hidden{
+        display: none;
+    }
     .gs-nav-bar{
         height: 18vh;
+       
     }
     .gs-button-container{
         width: 80vw;
         height: 11vh;
         justify-content: space-around;
     }
-    .gs-button{
-        width: 5.5em;
-        height: 1.8em;
-        margin-bottom: .6em;
-        border: .09em #1ba94c solid;
+    .sem-img{
+        margin: 3em;
+        width: 80%;
+    }
+    .gs-sem-icon img{
+        z-index: 2;
+        width: 55%;
     }
     .gs-button h4{
         font-size: 14px;
     }
+    .semester{
+        height: 78vh;
+    }
     .semester-container{
-        margin-top: 25px;
+        margin-top: 16px;
         margin-bottom: 25px;
     }
     .sems-content{
         height: 78vh;
     }
-    #gs-btn-1,#gs-btn-2,#gs-btn-3,#gs-btn-4,#gs-btn-5{
+    .sem-areas{
         height: 78vh;
+    }
+    .sem-first-area{
+        height: 50vh;
     }
     .semester h1{
         width: 80vw;
@@ -261,24 +284,14 @@
         margin: 1.2em 0 .5em 0;
         font-size: 22px;
     }
-    .semester img{
-        margin: 20vw 0 0 0 ;
-        width: 80vw;
-    }
     .semester-box{
         width: 15em;
         height: 3em;
         margin: 1em 0 1em 0;
-        /* border: 1px red solid; */
-    }
+        }
     .gs-sem-icon{
         width: 3em;
         height: 2.8em;
-    }
-    .gs-sem-icon i{
-        position: relative;
-        font-size: 16px;
-        color: #39424e;
     }
     .semester-box p{
         margin: .75em .8em;
@@ -294,3 +307,103 @@
         font-size: 18px;
     }
 }
+/* @media screen and (device-height: 568px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    // css here
+} */
+
+                             /* DARK MODE STARTS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-light: white;
+  --clr-dark:#1d3e53;
+  --clr-gs-button-container:#39424e;
+  --clr-semester-boxp:#39424e;
+  --clr-semester-h1:#39424e;
+
+  
+
+  --foreground: var(--clr-dark);
+  --background: var(--clr-light);
+
+}
+
+.darkmode {
+  --clr-light:white;
+  --clr-dark: #1d3e53;
+  --clr-gs-button-container:#77abb7;
+  --clr-semester-h1:#77abb7;
+  --clr-semester-boxp:#77abb7;
+  
+  
+
+  --foreground: var(--clr-light);
+  --background: var(--clr-dark);
+}
+
+                         /* DARK MODE ENDS */
+
+    input[type="checkbox"] {
+    position: relative;
+    margin-left: 95%;
+    margin-top: 50px;
+    width: 40px;
+    height: 10px;
+    background: #bdc3c7;
+    -webkit-appearance: none;
+    border-radius: 50px;
+    outline: none;
+    transition: .4s;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  input:checked[type="checkbox"] {
+    background: #1ba94c;
+  }
+  
+  input[type="checkbox"]::before {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: .4s;
+  }
+  
+  input:checked[type="checkbox"]::before {
+    left: 30px;
+  }
+  
+  .toggle {
+    position: relative;
+    display: inline;
+  }
+  
+  label {
+    position: absolute;
+    color: #fff;
+    font-weight: 400;
+    font-size: 10px;
+    pointer-events: none;
+  }
+  
+  .onbtn {
+    bottom: 15px;
+    left: 15px;
+  }
+  
+  .ofbtn {
+    bottom: 15px;
+    right: 14px;
+    color: #34495e;
+  }

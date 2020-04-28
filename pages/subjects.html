@@ -2,46 +2,63 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="shortcut icon" type="image/svg" href="../public/icons/logo.svg">
+    <link async href="../css/fonts.css" rel="stylesheet"> 
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/subjects.css">
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/subjects.css">
     <title>SUBJECT_PAGE</title>
 </head>
 <body class="bg">
+
+  <!--------------------------------------------------------------- nav bar section------------------------------------------------------- -->
   <div class="gs-nav-cicrle" id="openMenu" >
-    <i class="fas fa-bars gs-hamburger-icon"></i>
-  </div>
-  <div class="gs-menu-slider" id="menuSlider">
-      <div class="gs-text-cont">
-          <div class="gs-menu-options">
-              <i class="fas fa-home"></i>
-              <h1><a href="../index.html">Home</a></h1>
-          </div>
-          <div class="gs-line"></div>
-          <div class="gs-menu-options">
-              <i class="fab fa-whatsapp"></i>
-              <h1><a href="pages/Team.html">Contact Us</a></h1>
-          </div>
-          <div class="gs-line"></div>
-          <div class="gs-menu-options">
-              <i class="fas fa-users"></i>
-              <h1><a href="pages/Team.html">Team</a></h1>
-          </div>
-          <div class="gs-line"></div>
-      </div>
+    <img src="../public/icons/menu.svg">
   </div>
   <div class="gs-fadde" id="fadded">
   </div>
+  <div class="gs-menu-slider" id="menuSlider">
+    <div>
+      <img class='logo'src="../public/icons/logo.svg" alt="">
+    </div>
+    <div class="gs-text-cont">
+        <div class="gs-menu-options">
+            <img src="../public/icons/home.svg">
+            <a href="../index.html"><h1 class="fontH1">Home</h1></a>
+        </div>
+        <div class="gs-line"></div>
+        <div class="gs-menu-options">
+            <img src="../public/icons/whatsapp.svg">
+            <a href="../pages/Team.html"><h1 class="fontH1">Team</h1></a>
+        </div>
+        <div class="gs-line"></div>
+        <div class="gs-menu-options">
+            <img src="../public/icons/team.png">
+            <a href="index.html"><h1 class="fontH1">Contact us</h1></a>
+        </div>
+        <div class="gs-line"></div>
+        <div  id="dark-mode-toggle"
+        class="dark-mode-toggle"
+        aria-label="toggle dark mode">
+        <div class="toggle">
+            <h1 class="fontH1">Night Mode</h1>
+        <input type="checkbox">
+        <label for="" class="onbtn"></label>
+        <label for="" class="ofbtn"></label>
+        </div>
+        </div>
+        <div class="gs-line"></div>
+    </div>
+  </div>
+
+  <!---------------------------------------------------------- navbar section end---------------------------------------------------------------->
   <div class="as-xyz">
     <h1>Basic Applied science</h1>
     <p>Semester 1 & 2</p>
   </div>
   <div class="as-card-container" >  
     <div class="as-card">
-      <img src="../public/maths.png" class="as-card-pic" alt="img">
+      <img src="../public/jpg/maths.jpg" class="as-card-pic" alt="img">
       <div class="as-subject-name">
         <h1>Applied Mathematics-II</h1>
       </div>
@@ -51,25 +68,25 @@
           <div class="gs-subject-details">
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book"></i>
+                <img class="sem-img" src="../public/icons/books.png">
               </div>
               <span>Syllabus</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-question"></i>
+                <img class="sem-img" src="../public/icons/qesution.png">
               </div>
               <span>Qes Papers</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="far fa-clipboard"></i>
+                <img class="sem-img" src="../public/icons/note.png">
               </div>
               <span>Notes</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book-open"></i>
+                <img class="sem-img" src="../public/icons/syllabus.png">
               </div>
               <span>Books</span>
             </div>
@@ -78,7 +95,7 @@
       </div>
     </div>
     <div class="as-card">
-      <img src="../public/phys.png" class="as-card-pic" alt="img">
+      <img src="../public/jpg/phys.jpg" class="as-card-pic" alt="img">
       <div class="as-subject-name">
         <h1>Applied Physics-II</h1>
       </div>
@@ -88,25 +105,25 @@
           <div class="gs-subject-details">
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book"></i>
+                <img class="sem-img" src="../public/icons/books.png">
               </div>
               <span>Syllabus</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-question"></i>
+                <img class="sem-img" src="../public/icons/qesution.png">
               </div>
               <span>Qes Papers</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="far fa-clipboard"></i>
+                <img class="sem-img" src="../public/icons/note.png">
               </div>
               <span>Notes</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book-open"></i>
+                <img class="sem-img" src="../public/icons/syllabus.png">
               </div>
               <span>Books</span>
             </div>
@@ -116,7 +133,7 @@
       </div>
     </div>
     <div class="as-card">
-      <img src="../public/chemistry.png" class="as-card-pic" alt="img">
+      <img src="../public/jpg/chemistry.jpg" class="as-card-pic" alt="img">
       <div class="as-subject-name">
         <h1>Applied Chemistry</h1>
       </div>
@@ -126,25 +143,25 @@
           <div class="gs-subject-details">
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book"></i>
+                <img class="sem-img" src="../public/icons/books.png">
               </div>
               <span>Syllabus</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-question"></i>
+                <img class="sem-img" src="../public/icons/qesution.png">
               </div>
               <span>Qes Papers</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="far fa-clipboard"></i>
+                <img class="sem-img" src="../public/icons/note.png">
               </div>
               <span>Notes</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book-open"></i>
+                <img class="sem-img" src="../public/icons/syllabus.png">
               </div>
               <span>Books</span>
             </div>
@@ -164,25 +181,25 @@
           <div class="gs-subject-details">
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book"></i>
+                <img class="sem-img" src="../public/icons/books.png">
               </div>
               <span>Syllabus</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-question"></i>
+                <img class="sem-img" src="../public/icons/qesution.png">
               </div>
               <span>Qes Papers</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="far fa-clipboard"></i>
+                <img class="sem-img" src="../public/icons/note.png">
               </div>
               <span>Notes</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book-open"></i>
+                <img class="sem-img" src="../public/icons/syllabus.png">
               </div>
               <span>Books</span>
             </div>
@@ -192,7 +209,7 @@
       </div>
     </div>
     <div class="as-card">
-      <img src="../public/dcld.png" class="as-card-pic" alt="img">
+      <img src="../public/dcld.jpg" class="as-card-pic" alt="img">
       <div class="as-subject-name">
         <h1>Digital Circuits and logic</h1>
       </div>
@@ -202,25 +219,25 @@
           <div class="gs-subject-details">
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book"></i>
+                <img class="sem-img" src="../public/icons/books.png">
               </div>
               <span>Syllabus</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-question"></i>
+                <img class="sem-img" src="../public/icons/qesution.png">
               </div>
               <span>Qes Papers</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="far fa-clipboard"></i>
+                <img class="sem-img" src="../public/icons/note.png">
               </div>
               <span>Notes</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book-open"></i>
+                <img class="sem-img" src="../public/icons/syllabus.png">
               </div>
               <span>Books</span>
             </div>
@@ -230,7 +247,7 @@
       </div>
     </div>
     <div class="as-card">
-      <img src="../public/basic_electronic.png" class="as-card-pic" alt="img">
+      <img src="../public/jpg/basic_electronic.jpg" class="as-card-pic" alt="img">
       <div class="as-subject-name">
         <h1>Basic Electrical Engineering</h1>
       </div>
@@ -240,25 +257,25 @@
           <div class="gs-subject-details">
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book"></i>
+                <img class="sem-img" src="../public/icons/books.png">
               </div>
               <span>Syllabus</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-question"></i>
+                <img class="sem-img" src="../public/icons/qesution.png">
               </div>
               <span>Qes Papers</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="far fa-clipboard"></i>
+                <img class="sem-img" src="../public/icons/note.png">
               </div>
               <span>Notes</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book-open"></i>
+                <img class="sem-img" src="../public/icons/syllabus.png">
               </div>
               <span>Books</span>
             </div>
@@ -268,7 +285,7 @@
       </div>
     </div>
     <div class="as-card">
-      <img src="../public/basic_electrical.png" class="as-card-pic" alt="img">
+      <img src="../public/jpg/basic_electrical.jpg" class="as-card-pic" alt="img">
       <div class="as-subject-name">
         <h1>Basic Electronic Engineering</h1>
       </div>
@@ -278,25 +295,25 @@
           <div class="gs-subject-details">
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book"></i>
+                <img class="sem-img" src="../public/icons/books.png">
               </div>
               <span>Syllabus</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-question"></i>
+                <img class="sem-img" src="../public/icons/qesution.png">
               </div>
               <span>Qes Papers</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="far fa-clipboard"></i>
+                <img class="sem-img" src="../public/icons/note.png">
               </div>
               <span>Notes</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book-open"></i>
+                <img class="sem-img" src="../public/icons/syllabus.png">
               </div>
               <span>Books</span>
             </div>
@@ -306,7 +323,7 @@
       </div>
     </div>
     <div class="as-card">
-      <img src="../public/drawing.png" class="as-card-pic" alt="img">
+      <img src="../public/jpg/drawing.jpg" class="as-card-pic" alt="img">
       <div class="as-subject-name">
         <h1>Engineering Graphics</h1>
       </div>
@@ -316,25 +333,25 @@
           <div class="gs-subject-details">
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book"></i>
+                <img class="sem-img" src="../public/icons/books.png">
               </div>
               <span>Syllabus</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-question"></i>
+                <img class="sem-img" src="../public/icons/qesution.png">
               </div>
               <span>Qes Papers</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="far fa-clipboard"></i>
+                <img class="sem-img" src="../public/icons/note.png">
               </div>
               <span>Notes</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book-open"></i>
+                <img class="sem-img" src="../public/icons/syllabus.png">
               </div>
               <span>Books</span>
             </div>
@@ -344,7 +361,7 @@
       </div>
     </div>
     <div class="as-card">
-      <img src="../public/object.png" class="as-card-pic" alt="img">
+      <img src="../public/jpg/object.jpg" class="as-card-pic" alt="img">
       <div class="as-subject-name">
         <h1>Object oriented Programming</h1>
       </div>
@@ -354,25 +371,25 @@
           <div class="gs-subject-details">
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book"></i>
+                <img class="sem-img" src="../public/icons/books.png">
               </div>
               <span>Syllabus</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-question"></i>
+                <img class="sem-img" src="../public/icons/qesution.png">
               </div>
               <span>Qes Papers</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="far fa-clipboard"></i>
+                <img class="sem-img" src="../public/icons/note.png">
               </div>
               <span>Notes</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book-open"></i>
+                <img class="sem-img" src="../public/icons/syllabus.png">
               </div>
               <span>Books</span>
             </div>
@@ -382,7 +399,7 @@
       </div>
     </div>
     <div class="as-card">
-      <img src="../public/prog.png" class="as-card-pic" alt="img">
+      <img src="../public/jpg/prog.jpg" class="as-card-pic" alt="img">
       <div class="as-subject-name">
         <h1>Computer Programming</h1>
       </div>
@@ -392,25 +409,25 @@
           <div class="gs-subject-details">
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book"></i>
+                <img class="sem-img" src="../public/icons/books.png">
               </div>
               <span>Syllabus</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-question"></i>
+                <img class="sem-img" src="../public/icons/qesution.png">
               </div>
               <span>Qes Papers</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="far fa-clipboard"></i>
+                <img class="sem-img" src="../public/icons/note.png">
               </div>
               <span>Notes</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book-open"></i>
+                <img class="sem-img" src="../public/icons/syllabus.png">
               </div>
               <span>Books</span>
             </div>
@@ -420,7 +437,7 @@
       </div>
     </div>
     <div class="as-card">
-      <img src="../public/manufacturing.png" class="as-card-pic" alt="img">
+      <img source  src="../public/jpg/manufacturing.jpg" class="as-card-pic" alt="img">
       <div class="as-subject-name">
         <h1>Manufacturing Process</h1>
       </div>
@@ -430,25 +447,25 @@
           <div class="gs-subject-details">
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book"></i>
+                <img class="sem-img" src="../public/icons/books.png">
               </div>
               <span>Syllabus</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-question"></i>
+                <img class="sem-img" src="../public/icons/qesution.png">
               </div>
               <span>Qes Papers</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="far fa-clipboard"></i>
+                <img class="sem-img" src="../public/icons/note.png">
               </div>
               <span>Notes</span>
             </div>
             <div class="gs-subject-details-button">
               <div class="gs-subject-details-icon">
-                <i class="fas fa-book-open"></i>
+                <img class="sem-img" src="../public/icons/syllabus.png">
               </div>
               <span>Books</span>
             </div>
@@ -460,6 +477,7 @@
   </div>  
 </div>
 <script src="../js/navbar.js"></script>
+<script src="darkmode2.js"></script>
 
 </body>
 </html>
